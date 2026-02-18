@@ -1,6 +1,6 @@
 # 第一阶段：编译
 FROM caddy:2.10.2-builder AS builder
-RUN xcaddy build --with github.com/caddy-dns/alidns
+RUN xcaddy build --with github.com/caddy-dns/edgeone
 
 # 第二阶段：运行环境
 FROM alpine:3.23.3
